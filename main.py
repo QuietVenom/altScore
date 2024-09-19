@@ -25,7 +25,7 @@ async def status(request: Request, system: ModelName):
 
     request.session["damaged_system"] = damaged_system
 
-    return {"damaged_system": damaged_system + " idenfied, please wait for help."}
+    return {"damaged_system": damaged_system}
 
 
 @app.get("/repair-bay", response_class=HTMLResponse)
